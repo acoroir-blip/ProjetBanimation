@@ -11,5 +11,5 @@ box.addEventListener("click", () => {
   console.log("bouton cliquer")
   box.style.background = "red"
   box.textContent = "AAAAAAAAAAAAAAH"
-  box.classList.add("allume")
+  
 })
