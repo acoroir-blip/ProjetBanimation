@@ -3,5 +3,13 @@ document.querySelector("#interrupteur").addEventListener("click", () => {
   testScene.textContent = "Clic reçu. Ouvre js/scene.js pour allumer la scène.";
 });
 let button = document.querySelector(".presentation")
-console.log(button)
+
 button.style.background = "red"
+const box = document.querySelector(".interrupteur")
+
+box.addEventListener("click", () => {
+  console.log("bouton cliquer")
+  box.style.background = "red"
+  box.textContent = "AAAAAAAAAAAAAAH"
+  box.classList.add("allume")
+})
